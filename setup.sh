@@ -1,12 +1,11 @@
 #update && upgrade
 sudo apt update && sudo apt full-upgrade -y
 
-#add repos
-sudo add-apt-repository ppa:neovim-ppa/unstable
+
 
 #install essentials
 sudo apt install software-properties-common git unzip curl tmux zsh ranger neovim python3 python3-venv python3-pip -y
-sudo snap install lsd
+sudo snap install lsd fuse libfuse2
 
 # #set up ssh
 # sudo apt install openssh-server -y
