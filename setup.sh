@@ -23,5 +23,12 @@ echo 'add the above key to github here: https://github.com/settings/keys'
 read -p 'push enter to continue'
 read gitcontinue
 
+
+#Pull down Neovim and install it
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim.appimage
+chmod u+x nvim.appimage
+sudo mv nvim.appimage /usr/local/bin/nvim
+
+
 #set up ohmyzsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
